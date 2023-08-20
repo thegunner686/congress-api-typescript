@@ -1,0 +1,38 @@
+{
+  "name": "@gunnerspencer/congress-api-typescript",
+  "version": "1.0.0",
+  "description": "A TypeScript wrapper around the api.congress.gov",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "lint": "yarn eslint .",
+    "format": "yarn prettier . --write",
+    "format-check": "yarn prettier . --check",
+    "format-lint": "yarn format && yarn lint",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.ts": "yarn eslint .",
+    "**/*": "yarn format"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thegunner686/congress-api-typescript.git"
+  },
+  "author": "Gunner Spencer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thegunner686/congress-api-typescript/issues"
+  },
+  "homepage": "https://github.com/thegunner686/congress-api-typescript#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.0",
+    "prettier": "3.0.2",
+    "typescript": "^5.1.6"
+  }
+}
