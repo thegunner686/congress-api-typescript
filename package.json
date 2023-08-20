@@ -5,7 +5,12 @@
   "main": "src/index.js",
   "scripts": {
     "build": "npx tsc",
-    "lint": "yarn eslint ."
+    "lint": "yarn eslint .",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.ts": "yarn eslint .",
+    "**/*": "prettier --write --ignore-unknown"
   },
   "repository": {
     "type": "git",
@@ -22,6 +27,8 @@
     "@typescript-eslint/parser": "^6.4.0",
     "eslint": "^8.47.0",
     "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.0",
     "prettier": "3.0.2",
     "typescript": "^5.1.6"
   }
