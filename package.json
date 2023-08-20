@@ -1,0 +1,19 @@
+{
+  "name": "@gunnerspencer/congress-api-typescript",
+  "version": "1.0.0",
+  "description": "A TypeScript wrapper around the api.congress.gov",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thegunner686/congress-api-typescript.git"
+  },
+  "author": "Gunner Spencer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thegunner686/congress-api-typescript/issues"
+  },
+  "homepage": "https://github.com/thegunner686/congress-api-typescript#readme"
+}
