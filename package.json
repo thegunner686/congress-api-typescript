@@ -13,7 +13,7 @@
   },
   "lint-staged": {
     "*.ts": "yarn eslint .",
-    "**/*": "prettier --write --ignore-unknown"
+    "**/*": "yarn format"
   },
   "repository": {
     "type": "git",
