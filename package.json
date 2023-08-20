@@ -6,6 +6,7 @@
   "scripts": {
     "build": "npx tsc",
     "lint": "yarn eslint .",
+    "format": "yarn prettier ./src",
     "prepare": "husky install"
   },
   "lint-staged": {

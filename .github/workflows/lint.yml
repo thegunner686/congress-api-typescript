@@ -20,17 +20,11 @@ jobs:
       - name: Check out Git repository
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: 18.17.1
-
       - name: Install dependencies
-        run: yarn install
+        run: yarn
 
-      - name: Run linters
-        uses: wearerequired/lint-action@v2
-        with:
-          tsc: true
-          eslint: true
-          prettier: true
+      - name: Run ESLint
+        run: eslint . --ext .ts
+
+      - name: Run Prettier
+        run: prettier ./src
