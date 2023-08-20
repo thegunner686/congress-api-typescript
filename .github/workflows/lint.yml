@@ -1,0 +1,30 @@
+name: Lint
+
+on:
+  # Trigger the workflow on push or pull request,
+  push:
+    branches:
+      - main
+      - gunners/*
+  pull_request:
+    branches:
+      - main
+      - gunners/*
+
+jobs:
+  run-linters:
+    name: Run linters
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Run ESLint
+        run: yarn lint
+
+      - name: Run Prettier
+        run: yarn format-check
